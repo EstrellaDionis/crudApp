@@ -1,25 +1,19 @@
-
 module.exports = {
   development: {
     client: "sqlite3",
     connection: {
-      filename: "./data/fullStackApp.db3",
+      filename: "./server/data/movies.db3",
     },
     useNullAsDefault: null,
     migrations: {
-      directory: "./data/migrations",
+      directory: "./server/data/migrations",
     },
     seeds: {
-      directory: "./data/seeds",
+      directory: "./server/data/seeds",
     },
   },
 
-  staging: {
-    
-    }
-  },
+  staging: {},
 
-  production: {
-   
-  }
+  production: {},
 };
